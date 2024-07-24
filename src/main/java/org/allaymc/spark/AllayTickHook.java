@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import me.lucko.spark.common.tick.AbstractTickHook;
 import me.lucko.spark.common.tick.TickHook;
 import org.allaymc.api.scheduler.Task;
+import org.allaymc.api.server.Server;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -27,7 +28,7 @@ public class AllayTickHook extends AbstractTickHook implements TickHook, Task {
 
     @Override
     public void start() {
-        this.plugin.getServerScheduler().scheduleRepeating(this.plugin, this, 1);
+        Server.getInstance().getScheduler().scheduleRepeating(this.plugin, this, 1);
     }
 
     @Override

@@ -22,8 +22,8 @@ repositories {
 }
 
 dependencies {
-//    compileOnly("org.allaymc:Allay-API:1.0.0") TODO: fix this
-    compileOnly(files("libs/Allay-API-1.0.0-all.jar"))
+    compileOnly("org.allaymc:Allay-API:1.0.0")
+//    compileOnly(files("libs/Allay-API-1.0.0-all.jar"))
 
     implementation("me.lucko:spark-api:0.1-SNAPSHOT")
 //    implementation("me.lucko:spark-common:1.10-SNAPSHOT") TODO: fix this
