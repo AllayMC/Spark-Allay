@@ -14,6 +14,7 @@ java.targetCompatibility = JavaVersion.VERSION_17
 repositories {
     mavenCentral()
     mavenLocal() // Used for Allay-API & spark-common
+    maven("https://www.jitpack.io/")
     maven("https://repo.opencollab.dev/maven-releases/")
     maven("https://repo.opencollab.dev/maven-snapshots/")
     maven("https://storehouse.okaeri.eu/repository/maven-public/")
@@ -22,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("org.allaymc:Allay-API:1.0.0")
+    compileOnly("org.allaymc", "Allay-API", "1.0.0")
 //    compileOnly(files("libs/Allay-API-1.0.0-all.jar"))
 
     implementation("me.lucko:spark-api:0.1-SNAPSHOT")
